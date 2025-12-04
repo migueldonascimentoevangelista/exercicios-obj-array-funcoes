@@ -8,7 +8,7 @@ const listaDePRodutos = [
 ]
 
 function produtosMaiorQue50 (listaDePRodutos) {
-    return listaDePRodutos.filter(produto => produto.preço > 50)
+    return listaDePRodutos.filter(produt=> pro oduto.preço > 50)
 }
 
 console.log(produtosMaiorQue50(listaDePRodutos))

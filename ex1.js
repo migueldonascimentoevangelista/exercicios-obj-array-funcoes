@@ -8,4 +8,4 @@ function apresentar (aluno){
     return `${aluno.Nome} tem ${aluno.Idade} e cursa ${aluno.Curso}`
 }
 
-console.log(aluno)
+console.log(apresentar(aluno))

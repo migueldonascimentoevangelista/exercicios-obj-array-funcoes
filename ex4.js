@@ -1,8 +1,9 @@
-const listaDeNomes = ["Miguel", "Maria", "Matheus"]
+const nomes = ["Ana", "Bruno", "Carla", "Diego", "Eduarda"];
 
-function pushArray(valor, array=[]){
-    array[array.length]=valor
+function nomeExiste(nome) {
+    return nomes.includes(nome);
 }
 
-pushArray("Manuella", listaDeNomes)
-console.log(listaDeNomes)
+
+console.log(nomeExiste("Carla"));
+console.log(nomeExiste("Marcos"));

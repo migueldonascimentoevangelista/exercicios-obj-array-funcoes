@@ -1,19 +1,19 @@
-const numeros = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+const elementos = ["a", "b", "a", "c", "b", "a"];
+
 
 function contar(arr) {
     const contagem = {};
-  
-    for (const item of arr) {
-      if (contagem[item]) {
-        contagem[item] += 1;
-      } else {
-        contagem[item] = 1;
-      }
-    }
-  
+
+    arr.forEach(item => {
+        if (contagem[item]) {
+            contagem[item]++;      
+        } else {
+            contagem[item] = 1;  
+        }
+    });
+
     return contagem;
-  }
-  
-  const resultado = contar(numeros);
-  console.log(resultado);
+}
+
+console.log(contar(elementos));
   
